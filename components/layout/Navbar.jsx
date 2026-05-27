@@ -8,8 +8,10 @@ import { useCart } from '../../contexts/CartContext';
 const PAGES = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Products', path: '/products' },
-  { name: 'Contact', path: '/contact' },
+  /* { name: 'Products', path: '/products' },
+  { name: 'Contact', path: '/contact' }, */
+   { name: 'Products', path: '#' },
+  { name: 'Contact', path: '#' },
 ];
 
 export function Navbar() {
@@ -42,7 +44,16 @@ export function Navbar() {
         justifyContent: 'space-between',
         height: 72,
       }}>
-        <Link href="/" style={{ textDecoration: 'none' }}>
+        <Link href="/" style={{ textDecoration: 'none',display:'flex', justifyContent:'center', alignItems:'center' }}>
+            <div  style={{
+          height:'30px',
+          width:'30px',
+          marginRight:'10px'
+          
+        }} >
+
+            <img src="/logo2.jpg" alt="La Purane - Luxury Indian fashion crafted with generations of artisan" className='h-12 w-12' />
+            </div>
           <span style={{
             fontFamily: "'Cormorant Garamond', serif",
             fontSize: 26,
@@ -79,14 +90,14 @@ export function Navbar() {
         </div>
 
         <div style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
-          <Link href="/cart" style={{ textDecoration: 'none' }}>
+          <Link /*  href="/cart"  */ href="#" style={{ textDecoration: 'none' }}>
             <button style={{ background: 'none', border: 'none', cursor: 'pointer', position: 'relative', padding: 4 }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={solid ? '#111' : '#fff'} strokeWidth="1.5" style={{ transition: 'stroke 0.4s' }}>
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
                 <line x1="3" y1="6" x2="21" y2="6"/>
                 <path d="M16 10a4 4 0 01-8 0"/>
               </svg>
-              {cartCount > 0 && (
+              {/* {cartCount > 0 && (
                 <span style={{
                   position: 'absolute',
                   top: -4,
@@ -104,7 +115,7 @@ export function Navbar() {
                 }}>
                   {cartCount}
                 </span>
-              )}
+              )} */}
             </button>
           </Link>
 

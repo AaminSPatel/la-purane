@@ -127,7 +127,7 @@ export default function About() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
             <FadeUp>
               <img
-                src="https://images.unsplash.com/photo-1592878849122-facb97ed3dfd?w=900&q=85"
+                src="/logo.jpg"
                 alt="Craft"
                 style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover' }}
               />

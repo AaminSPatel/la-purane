@@ -32,7 +32,15 @@ export function Footer() {
           marginBottom: '4rem',
         }} className="footer-grid">
           
-          <div>
+          <div className='flex flex-row'>
+            <div className="h-12 w-12"  style={{
+          height:'50px',
+          width:'50px',
+          marginBottom:'10px'
+        }} >
+
+            <img src="/logo2.jpg" alt="La Purane - Luxury Indian fashion crafted with generations of artisan" className='h-12 w-12' />
+            </div>
             <h3 style={{
               fontFamily: "'Cormorant Garamond', serif",
               fontSize: 28,
@@ -41,7 +49,7 @@ export function Footer() {
               color: '#fff',
               marginBottom: 20,
             }}>
-              LÀ PÚRÁNÉ
+              LÀ PÚRANE
             </h3>
             <p style={{
               fontFamily: "'Cormorant Garamond', serif",
