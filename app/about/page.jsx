@@ -128,7 +128,7 @@ export default function About() {
             <FadeUp>
               <img
                 src="/logo.jpg"
-                alt="Craft"
+                alt="Luxury Indian fashion crafted with generations of artisan knowledge. Every thread tells a story. Every garment carries a heritage."
                 style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover' }}
               />
             </FadeUp>
